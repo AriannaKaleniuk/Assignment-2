@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Contact me | Arianna Kaleniuk</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="top-nav">
+      <a href="gallery.html">GALLERY</a>
+      <a href="index.html">HOME</a>
+      <a href="interests.html">INTERESTS</a>
+      <a href="contact.html">CONTACT</a>
+          <a href="inspiration.html">INSPIRATION</a>
+              <a href="playlist.html">PLAYLIST</a>
+    </nav>
+    <div class="about">contact me</div>
+  </header>
+
+  <main class="form-page">
+
+    <section class="form-intro">
+      <h1>Let's talk ;)</h1>
+      <p>
+        If you like my photos, want to work with me or just to chat, you can send me a message here.
+        I will try my best to reply as soon as possible.
+      </p>
+      <p>
+        Please fill in the form on the right. Fields with * are required.
+      </p>
+    </section>
+
+    <section class="form-w">
+      <form class="contact-form" action="sub.html" method="get" autocomplete="on">
+        <div class="form-row">
+          <label for="name">Name *</label>
+          <input id="name" name="name" type="text"
+                 placeholder="Your name"
+                 required autofocus>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email *</label>
+          <input id="email" name="email" type="email"
+                 placeholder="info@example.com"
+                 required
+                 title="Please enter a valid email, e.g. name@example.com">
+        </div>
+
+        <div class="form-row">
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel"
+                 placeholder="+353..."
+                 pattern="[0-9+ ]{7,}"
+                 title="Use numbers, spaces and + sign only">
+        </div>
+
+        <div class="form-row">
+          <label for="photos">How would you rate the gallery page?</label>
+          <input id="photos" name="gallery" type="number"
+                 min="1" max="10" step="1">
+        </div>
+
+        <fieldset class="check">
+          <legend>How did you find out about this website/me? *</legend>
+          <label>
+            <input type="radio" name="found" value="instagram" required>
+            Instagram
+          </label>
+          <label>
+            <input type="radio" name="found" value="friends">
+            Friends
+          </label>
+          <label>
+            <input type="radio" name="found" value="other">
+            Other
+          </label>
+        </fieldset>
+
+        <div class="form-row">
+          <label for="topic">What are you interested in? *</label>
+          <select id="topic" name="topic" required>
+            <option value="">-- please choose --</option>
+            <option value="shoot">Photoshoot</option>
+            <option value="collab">Collaboration / project</option>
+            <option value="question">Just a question</option>
+            <option value="chat">Chatting</option>
+            <option value="other">Something else</option>
+          </select>
+        </div>
+
+        <fieldset class="check">
+          <legend>What language do you speak?</legend>
+          <label>
+            <input type="checkbox" name="language" value="english"> English
+          </label>
+          <label>
+            <input type="checkbox" name="language" value="russian"> Russian
+          </label>
+          <label>
+            <input type="checkbox" name="language" value="spanish"> Spanish
+          </label>
+          <label>
+            <input type="checkbox" name="language" value="other"> Other
+          </label>
+        </fieldset>
+
+        <div class="form-row">
+          <label for="message">Your message *</label>
+          <textarea id="message" name="message" rows="5"
+                    required
+                    minlength="10"
+                    placeholder="Write your message here..."
+                    title="Write at least 10 characters"></textarea>
+        </div>
+
+        <div class="form-row buttons-row">
+          <input type="submit" value="Send message">
+          <input type="reset" value="Clear">
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <ul>
+      <li><a href="https://www.instagram.com/arianna.kaleniuk/" target="_blank">Instagram</a></li>
+      <li><a href="mailto:20118301@setu.ie">Email</a></li>
+      <li>Phone: +353870389349</li>
+    </ul>
+  </footer>
+
+</body>
+</html>

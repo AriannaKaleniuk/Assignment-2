@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Animals</title>
+    <style>
+	 body {
+       font-family: sans-serif;
+     }
+
+     table {
+       border-collapse: collapse;
+       border: 2px solid rgb(200,200,200);
+       letter-spacing: 1px;
+       font-size: 0.8rem;
+       margin:0em 0em 3em 1em;
+     }
+
+     td, th {
+       border: 1px solid rgb(190,190,190);
+       padding: 10px 20px;
+     }
+
+     th {
+       background-color: rgb(235,235,235);
+     }
+
+     caption {
+	   text-align:left;
+     }
+	</style>
+  </head>
+  <body>
+    <h1>Animals</h1>
+    <table>
+      <caption> Simple Dog Table</caption>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Knocky</td>
+        <td>16</td>
+      </tr>
+      <tr>
+        <td>Flor</td>
+        <td>9</td>
+      </tr>
+      <tr>
+        <td>Ella</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>Juan</td>
+        <td>5</td>
+      </tr>
+    </table>
+	
+ <table>
+      <caption> Advanced Dog Table</caption>
+      <tr>
+        <th></th>
+        <th>Knocky</th>
+        <th>Flor</th>
+        <th>Ella</th>
+        <th>Juan</th>
+      </tr>
+       <tr><th rowspan="1">Breed</th>
+        <td>Jack Russell</td>
+        <td>Poodle</td>
+        <td>Streetdog</td>
+        <td>Cocker Spaniel</td>
+      </tr>
+       <tr><th rowspan="1">Age</th>
+      <td>16</td>
+      <td>9</td>
+      <td>10</td>
+      <td>5</td>
+      </tr>
+       <tr><th rowspan="1">Owner</th>
+      <td>Mother-in-law</td>
+      <td>Me</td>
+      <td>Me</td>
+      <td>Sister-in-law</td>
+       <tr><th rowspan="1">Eating Habits</th>
+      <td>Eats everyone's leftovers</td>
+      <td>Nibbles at food</td>
+      <td>Hearty eater</td>
+      <td>Will eat till he explodes</td>
+    </table>
+	
+        <table>
+      <caption> Animal Table</caption>
+      <tr>
+        <tr><th rowspan="1">Animals</th>
+        <tr><th rowspan="3">Hippopotamus</th>
+          <tr><th rowspan="4">Horse</th>
+            <td>Mare</td>
+            <td>Stallion</td>
+          <tr><th rowspan="1">Crocodile</th>
+          <tr><th rowspan="1">Chicken</th>
+            <td>Hen</td>
+            <td colspan="3">Rooster</td>
+    </table>
+
+  </body>
+</html>
